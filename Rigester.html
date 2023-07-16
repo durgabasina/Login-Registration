@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <style>
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: white;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 0 15px  #4682B4;
+}
+
+
+.header h2{
+    margin-top:40px;
+    margin-bottom:30px;
+    padding:00 15px 0;    
+    text-align:center;
+
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.field{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.field label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.field input:not(.terms){
+    
+    display: block;
+    border-radius: 4px;
+    border:2px solid #f0f0f0;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+
+
+.form .button{
+    background-color: #1e90ff;
+    border: 2px solid #1e90ff;
+    color: white;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    cursor:pointer;
+    font-size: 16px;
+    border-radius:8px;
+    box-shadow: 0 0 10px black;
+
+}
+  .button:hover , .button:focus {
+
+       outline-offset: 10px;
+       background-color:#4169E1;
+ }
+
+ 
+ </style>
+</head>
+<body>
+
+<div class="container">
+
+      <div class="header">
+          <h2>REGISTER HERE</h2>
+    </div>
+
+ <form action="index.html" class="form" id="form">
+
+      <div class="field">
+                <label >Enter Name</label>
+                <input type="text" placeholder="Enter name" id="uname">
+    </div>
+
+      <div class="field">
+                <label>Email</label>
+                <input type="email" placeholder="@gmail.com" id="email">
+    </div>
+
+      <div class="field">
+                <label>Password</label>
+                <input type="password" placeholder="password" id="password">
+    </div>
+
+      <div class="field">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="password" id="cpassword">
+    </div>
+
+      <div class="field">
+                <input type="checkbox" id="tc" class="terms" >
+                <label>I agree to terms and conditions.</label>               
+    </div>
+
+            <input type="Submit" class="button" value="SUBMIT">
+
+ </form>
+</div>
+   
+ </body>
+</html>
